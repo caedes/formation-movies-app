@@ -13,5 +13,5 @@ npm install
 Compile the app:
 
 ```
-npx webpack
+npm run build
 ```
