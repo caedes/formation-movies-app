@@ -10,8 +10,8 @@ Install deps:
 npm install
 ```
 
-Compile the app:
+Run the app:
 
 ```
-npm run build
+npm run start
 ```
