@@ -1,4 +1,6 @@
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { WebpackManifestPlugin } = require("webpack-manifest-plugin");
 
 module.exports = {
   entry: {
@@ -8,7 +10,14 @@ module.exports = {
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
+    clean: true,
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: "Movies App",
+    }),
+    new WebpackManifestPlugin(),
+  ],
   module: {
     rules: [
       {
