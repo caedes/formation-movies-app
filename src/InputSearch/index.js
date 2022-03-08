@@ -4,11 +4,16 @@ export default class InputSearch {
   constructor() {}
 
   render(parentNode) {
-    const $inputSearch = document.createElement("input");
-    $inputSearch.setAttribute("name", "search");
-    $inputSearch.setAttribute("placeholder", "Search…");
-    $inputSearch.classList.add("inputSearch");
+    this.$inputSearch = document.createElement("input");
+    this.$inputSearch.setAttribute("name", "search");
+    this.$inputSearch.setAttribute("placeholder", "Search…");
+    this.$inputSearch.setAttribute("autocomplete", "off");
+    this.$inputSearch.classList.add("inputSearch");
 
-    parentNode.appendChild($inputSearch);
+    parentNode.appendChild(this.$inputSearch);
+  }
+
+  getInputNode() {
+    return this.$inputSearch;
   }
 }
