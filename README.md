@@ -15,3 +15,11 @@ Run the app:
 ```
 npm run start
 ```
+
+## Other Tools
+
+Run the linter:
+
+```
+npm run lint
+```
