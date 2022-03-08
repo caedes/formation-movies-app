@@ -7,18 +7,26 @@ export default class ImdbEntity {
   }
 
   render(parentNode) {
-    const $imdbEntity = document.createElement("div");
-    $imdbEntity.setAttribute("id", `entity-${this.id}`);
-    $imdbEntity.classList.add("imdbEntities");
+    this.$imdbEntity = document.createElement("div");
+    this.$imdbEntity.setAttribute("id", `entity-${this.id}`);
+    this.$imdbEntity.classList.add("imdbEntities");
 
-    const imdbEntityImg = new Image();
-    imdbEntityImg.src = `https://picsum.photos/200/300?grayscale&random=${this.id}`;
-    $imdbEntity.appendChild(imdbEntityImg);
+    this.renderImage();
 
+    this.renderTitle();
+
+    parentNode.appendChild(this.$imdbEntity);
+  }
+
+  renderTitle() {
     const $imdbEntityTitle = document.createElement("h3");
     $imdbEntityTitle.textContent = this.title;
-    $imdbEntity.appendChild($imdbEntityTitle);
+    this.$imdbEntity.appendChild($imdbEntityTitle);
+  }
 
-    parentNode.appendChild($imdbEntity);
+  renderImage() {
+    const imdbEntityImg = new Image();
+    imdbEntityImg.src = `https://picsum.photos/200/300?grayscale&random=${this.id}`;
+    this.$imdbEntity.appendChild(imdbEntityImg);
   }
 }

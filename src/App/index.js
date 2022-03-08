@@ -1,22 +1,23 @@
 import "./styles.css";
-import ImdbEntity from "../ImdbEntity";
 import InputSearch from "../InputSearch";
 import Filter from "../Filter";
 import ResultText from "../ResultText";
+import Movie from "../Movie";
+import Actor from "../Actor";
 
 export default class App {
   constructor() {
     this.entities = [
-      { id: 1, title: "The Ring" },
-      { id: 2, title: "The Ring 1" },
-      { id: 3, title: "The Ring 2, le retour" },
-      { id: 4, title: "The Ring 3" },
-      { id: 5, title: "The Ring" },
-      { id: 6, title: "The Ring" },
-      { id: 7, title: "The Ring" },
-      { id: 8, title: "The Ring" },
-      { id: 9, title: "The Ring" },
-      { id: 10, title: "The Ring" },
+      { id: 1, title: "The Ring", resultType: "Title" },
+      { id: 2, title: "The Ring 1", resultType: "Name" },
+      { id: 3, title: "The Ring 2, le retour", resultType: "Title" },
+      { id: 4, title: "The Ring 3", resultType: "Name" },
+      { id: 5, title: "The Ring", resultType: "Title" },
+      { id: 6, title: "The Ring", resultType: "Title" },
+      { id: 7, title: "The Ring", resultType: "Name" },
+      { id: 8, title: "The Ring", resultType: "Title" },
+      { id: 9, title: "The Ring", resultType: "Name" },
+      { id: 10, title: "The Ring", resultType: "Title" },
     ];
   }
 
@@ -36,7 +37,9 @@ export default class App {
     new ResultText().render($app);
 
     this.entities.map((entity) => {
-      new ImdbEntity(entity).render($app);
+      const imdbEntity =
+        entity.resultType === "Title" ? new Movie(entity) : new Actor(entity);
+      imdbEntity.render($app);
     });
   }
 }
