@@ -16,6 +16,12 @@ Run the app:
 npm run start
 ```
 
+…and the API:
+
+```
+npm run start:api
+```
+
 Develop your feature.✨
 
 And commit your work:

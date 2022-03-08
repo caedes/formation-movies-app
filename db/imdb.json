@@ -1,0 +1,221 @@
+{
+  "entities": [
+    {
+      "id": "tt0110413",
+      "resultType": "Title",
+      "image": "https://imdb-api.com/images/original/MV5BODllNWE0MmEtYjUwZi00ZjY3LThmNmQtZjZlMjI2YTZjYmQ0XkEyXkFqcGdeQXVyNTc1NTQxODI@._V1_Ratio0.7273_AL_.jpg",
+      "title": "Léon: The Professional",
+      "description": "(1994) aka \"Leon - Der Profi\""
+    },
+    {
+      "id": "tt0100029",
+      "resultType": "Title",
+      "image": "https://imdb-api.com/images/original/MV5BNDA4ZDVlOWMtNzAzMi00YmYwLTljYjctYzQ1MzcyOWZmYzdmXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_Ratio0.7273_AL_.jpg",
+      "title": "Lionheart",
+      "description": "(1990) aka \"Leon\""
+    },
+    {
+      "id": "tt0104710",
+      "resultType": "Title",
+      "image": "https://imdb-api.com/images/original/MV5BNDE2ODMxYTQtODJlYy00MTViLTgwZDctNGFkMmEyNTQ3NWFhXkEyXkFqcGdeQXVyMDY4MzkyNw@@._V1_Ratio0.7273_AL_.jpg",
+      "title": "Leon the Pig Farmer",
+      "description": "(1992)"
+    },
+    {
+      "id": "nm0502442",
+      "resultType": "Name",
+      "image": "https://imdb-api.com/images/original/MV5BNGE5MGIzMGItOWFmMy00OTVmLTg1YWQtMmEwNWU0M2ZkZWJhXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_Ratio0.7273_AL_.jpg",
+      "title": "Leon",
+      "description": "(I) (Actor, Cool Runnings (1993))"
+    },
+    {
+      "id": "nm7552311",
+      "resultType": "Name",
+      "image": "https://imdb-api.com/images/original/MV5BNmNjMzI3OWUtOTE2ZS00MmYwLWJkMzMtZTE2YTAzZmYxZjlmXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_Ratio0.7273_AL_.jpg",
+      "title": "Leon Walker",
+      "description": "(II) (Self, Below Deck (2013))"
+    },
+    {
+      "id": "leon",
+      "resultType": "Keyword",
+      "image": "",
+      "title": "leon",
+      "description": "(15 titles)"
+    },
+    {
+      "id": "co0777583",
+      "resultType": "Company",
+      "image": "",
+      "title": "Leonine Studios",
+      "description": "[de] (Production)"
+    },
+    {
+      "id": "co0560664",
+      "resultType": "Company",
+      "image": "",
+      "title": "Leone Film Group",
+      "description": "[it] (Production)"
+    },
+    {
+      "id": "tt14022056",
+      "resultType": "Title",
+      "image": "https://imdb-api.com/images/original/MV5BOWM1YjVlYjgtMWYzYS00MmM1LWE2YTEtMjM1ZGU2ZTQxY2FjXkEyXkFqcGdeQXVyNDY2NTY0MjM@._V1_Ratio0.7273_AL_.jpg",
+      "title": "Royal",
+      "description": "(2019) (Short)"
+    },
+    {
+      "id": "tt5555030",
+      "resultType": "Title",
+      "image": "https://imdb-api.com/images/original/nopicture.jpg",
+      "title": "Royal",
+      "description": "(II)"
+    },
+    {
+      "id": "nm13411132",
+      "resultType": "Name",
+      "image": "https://imdb-api.com/images/original/nopicture.jpg",
+      "title": "Royal Brannon",
+      "description": "(Self, Master Distiller (2019))"
+    },
+    {
+      "id": "nm6533341",
+      "resultType": "Name",
+      "image": "https://imdb-api.com/images/original/nopicture.jpg",
+      "title": "Royal",
+      "description": "(VII) (Composer, Royal: Vessel (2019))"
+    },
+    {
+      "id": "royal",
+      "resultType": "Keyword",
+      "image": "",
+      "title": "royal",
+      "description": "(66 titles)"
+    },
+    {
+      "id": "royale",
+      "resultType": "Keyword",
+      "image": "",
+      "title": "royale",
+      "description": "(8 titles)"
+    },
+    {
+      "id": "co0027611",
+      "resultType": "Company",
+      "image": "",
+      "title": "Royal",
+      "description": "(Production)"
+    },
+    {
+      "id": "co0415658",
+      "resultType": "Company",
+      "image": "",
+      "title": "Royal",
+      "description": "[ca] (Post Production Facilities)"
+    },
+    {
+      "id": "tt0298130",
+      "resultType": "Title",
+      "image": "https://imdb-api.com/images/original/MV5BNDA2NTg2NjE4Ml5BMl5BanBnXkFtZTYwMjYxMDg5._V1_Ratio0.7273_AL_.jpg",
+      "title": "The Ring",
+      "description": "(2002)"
+    },
+    {
+      "id": "tt4287320",
+      "resultType": "Title",
+      "image": "https://imdb-api.com/images/original/MV5BMjY2OTM2Njc3Ml5BMl5BanBnXkFtZTgwNDgzODU3MTI@._V1_Ratio0.7273_AL_.jpg",
+      "title": "The Circle",
+      "description": "(I) (2017) aka \"Ring\""
+    },
+    {
+      "id": "nm0823592",
+      "resultType": "Name",
+      "image": "https://imdb-api.com/images/original/MV5BMTY1Mjc1NzkwM15BMl5BanBnXkFtZTYwMTU4MzI2._V1_Ratio0.7273_AL_.jpg",
+      "title": "Ringo Starr",
+      "description": "(Actor, A Hard Day's Night (1964))"
+    },
+    {
+      "id": "nm1072555",
+      "resultType": "Name",
+      "image": "https://imdb-api.com/images/original/MV5BNmU5Yjk4OTItMjMzZS00MTYzLWI1ZDktYWM4YWM2NTM2YzMzXkEyXkFqcGdeQXVyMzY2OTA2MzM@._V1_Ratio0.7273_AL_.jpg",
+      "title": "Morena Baccarin",
+      "description": "(Actress, Deadpool (2016))"
+    },
+    {
+      "id": "ring",
+      "resultType": "Keyword",
+      "image": "",
+      "title": "ring",
+      "description": "(1869 titles)"
+    },
+    {
+      "id": "for-the-ring",
+      "resultType": "Keyword",
+      "image": "",
+      "title": "for-the-ring",
+      "description": "(54 titles)"
+    },
+    {
+      "id": "co0065829",
+      "resultType": "Company",
+      "image": "",
+      "title": "Ring",
+      "description": "(Distributor)"
+    },
+    {
+      "id": "co0540255",
+      "resultType": "Company",
+      "image": "",
+      "title": "Ringmaster Entertainment (II)",
+      "description": "[us] (Production)"
+    },
+    {
+      "id": "tt0133093",
+      "resultType": "Title",
+      "image": "https://imdb-api.com/images/original/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_Ratio0.7273_AL_.jpg",
+      "title": "The Matrix",
+      "description": "(1999)"
+    },
+    {
+      "id": "tt0106062",
+      "resultType": "Title",
+      "image": "https://imdb-api.com/images/original/MV5BYzUzOTA5ZTMtMTdlZS00MmQ5LWFmNjEtMjE5MTczN2RjNjE3XkEyXkFqcGdeQXVyNTc2ODIyMzY@._V1_Ratio0.7273_AL_.jpg",
+      "title": "Matrix",
+      "description": "(1993) (TV Series)"
+    },
+    {
+      "id": "tt11749868",
+      "resultType": "Title",
+      "image": "https://imdb-api.com/images/original/MV5BNjQyNWZiM2UtOWYyYS00MmVmLWFhZGUtY2ExMDQxNDc5YTE0XkEyXkFqcGdeQXVyMTEzMjQzMDM1._V1_Ratio0.7273_AL_.jpg",
+      "title": "Matrix",
+      "description": "(2020)"
+    },
+    {
+      "id": "nm2584122",
+      "resultType": "Name",
+      "image": "https://imdb-api.com/images/original/MV5BMjQ0MDUyMDY1N15BMl5BanBnXkFtZTgwNjI1NDI0OTE@._V1_Ratio1.0909_AL_.jpg",
+      "title": "Eddie Mariano",
+      "description": "(I) (Producer, Triangle Blvd. (2007)) nickname \"Matrix\""
+    },
+    {
+      "id": "matrix",
+      "resultType": "Keyword",
+      "image": "",
+      "title": "matrix",
+      "description": "(55 titles)"
+    },
+    {
+      "id": "co0450996",
+      "resultType": "Company",
+      "image": "",
+      "title": "Matrix",
+      "description": "[in] (Management)"
+    },
+    {
+      "id": "co0099311",
+      "resultType": "Company",
+      "image": "",
+      "title": "Matrix",
+      "description": "[us] (Production)"
+    }
+  ]
+}
