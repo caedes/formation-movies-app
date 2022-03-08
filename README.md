@@ -16,6 +16,14 @@ Run the app:
 npm run start
 ```
 
+Develop your feature.✨
+
+And commit your work:
+
+```
+npm run commit
+```
+
 ## Other Tools
 
 Run the linter:
