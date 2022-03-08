@@ -7,7 +7,7 @@ export default class ImdbEntity {
   }
 
   render(parentNode) {
-    this.$imdbEntity = document.createElement("div");
+    this.$imdbEntity = document.createElement("li");
     this.$imdbEntity.setAttribute("id", `entity-${this.id}`);
     this.$imdbEntity.classList.add("imdbEntities");
 

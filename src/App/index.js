@@ -36,10 +36,25 @@ export default class App {
     new Filter().render($app);
     new ResultText().render($app);
 
+    if (this.entities.length === 0) {
+      const $resultEntities = document.createElement("p");
+      $resultEntities.textContent = "No entity to display.";
+      $app.appendChild($resultEntities);
+    }
+
+    this.$entityList = document.createElement("ul");
+    this.$entityList.classList.add("entityList");
+
+    this.renderEntities();
+
+    $app.appendChild(this.$entityList);
+  }
+
+  renderEntities() {
     this.entities.map((entity) => {
       const imdbEntity =
         entity.resultType === "Title" ? new Movie(entity) : new Actor(entity);
-      imdbEntity.render($app);
+      imdbEntity.render(this.$entityList);
     });
   }
 }

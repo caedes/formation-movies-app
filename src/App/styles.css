@@ -17,3 +17,7 @@ body {
   font-size: 3rem;
   font-weight: 100;
 }
+
+.entityList {
+  padding: 0;
+}
