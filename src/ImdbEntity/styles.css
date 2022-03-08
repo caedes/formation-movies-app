@@ -1,5 +1,7 @@
 .imdbEntities {
   border: 1px solid lightgrey;
   width: 224px;
+  margin: 12px;
   padding: 12px;
+  display: inline-block;
 }
