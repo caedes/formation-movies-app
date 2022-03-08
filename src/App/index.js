@@ -24,7 +24,8 @@ export default class App {
 
     const inputSearch = new InputSearch();
     inputSearch.render(this.$app);
-    new Filter().render(this.$app);
+    const filter = new Filter();
+    filter.render(this.$app);
     new ResultText().render(this.$app);
 
     this.$entityList = document.createElement("ul");
@@ -35,16 +36,27 @@ export default class App {
     document.addEventListener("keyup", () => {
       const inputValue = inputSearch.getInputNode().value;
 
-      this.fetchEntities(inputValue);
+      this.fetchEntities({ inputValue });
+    });
+
+    [filter.$actorRadio, filter.$movieRadio].forEach(($radio) => {
+      $radio.addEventListener("change", () => {
+        this.fetchEntities({ filter: $radio.value });
+      });
     });
 
     this.$app.appendChild(this.$entityList);
   }
 
-  fetchEntities(inputValue) {
-    const queryParams = inputValue?.length >= 3 ? `?q=${inputValue}` : "";
+  fetchEntities(options = {}) {
+    const queryParams = [
+      options.inputValue?.length >= 3 ? `q=${options.inputValue}` : null,
+      options.filter ? `resultType=${options.filter}` : null,
+    ]
+      .filter((a) => a)
+      .join("&");
 
-    moviesFetch(`/entities${queryParams}`)
+    moviesFetch(`/entities?${queryParams}`)
       .then(responseToJson)
       .then((entities) => (this.entities = entities))
       .then(this.renderEntitiesMessage)

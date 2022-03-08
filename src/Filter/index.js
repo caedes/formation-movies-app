@@ -7,11 +7,12 @@ export default class Filter {
     const $filter = document.createElement("div");
     $filter.classList.add("filter");
 
-    const $movieRadio = document.createElement("input");
-    $movieRadio.setAttribute("id", "filter-movie");
-    $movieRadio.setAttribute("name", "filter");
-    $movieRadio.setAttribute("type", "radio");
-    $filter.appendChild($movieRadio);
+    this.$movieRadio = document.createElement("input");
+    this.$movieRadio.setAttribute("id", "filter-movie");
+    this.$movieRadio.setAttribute("name", "filter");
+    this.$movieRadio.setAttribute("type", "radio");
+    this.$movieRadio.value = "Title";
+    $filter.appendChild(this.$movieRadio);
 
     const $movieLabel = document.createElement("label");
     $movieLabel.classList.add("label");
@@ -19,11 +20,12 @@ export default class Filter {
     $movieLabel.textContent = "Movies";
     $filter.appendChild($movieLabel);
 
-    const $actorRadio = document.createElement("input");
-    $actorRadio.setAttribute("id", "filter-actor");
-    $actorRadio.setAttribute("name", "filter");
-    $actorRadio.setAttribute("type", "radio");
-    $filter.appendChild($actorRadio);
+    this.$actorRadio = document.createElement("input");
+    this.$actorRadio.setAttribute("id", "filter-actor");
+    this.$actorRadio.setAttribute("name", "filter");
+    this.$actorRadio.setAttribute("type", "radio");
+    this.$actorRadio.value = "Name";
+    $filter.appendChild(this.$actorRadio);
 
     const $actorLabel = document.createElement("label");
     $actorLabel.classList.add("label");
