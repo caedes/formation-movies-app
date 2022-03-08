@@ -1,5 +1,8 @@
 import "./styles.css";
 import ImdbEntity from "../ImdbEntity";
+import InputSearch from "../InputSearch";
+import Filter from "../Filter";
+import ResultText from "../ResultText";
 
 export default class App {
   constructor() {
@@ -22,6 +25,15 @@ export default class App {
     $app.setAttribute("id", "app");
 
     document.body.appendChild($app);
+
+    const $appTitle = document.createElement("h1");
+    $appTitle.textContent = "Movies App";
+    $appTitle.classList.add("appTitle");
+    $app.appendChild($appTitle);
+
+    new InputSearch().render($app);
+    new Filter().render($app);
+    new ResultText().render($app);
 
     this.entities.map((entity) => {
       new ImdbEntity(entity).render($app);
