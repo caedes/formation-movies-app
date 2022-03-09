@@ -9,6 +9,7 @@ import ResultText from "../ResultText";
 export default class App {
   constructor() {
     this.entities = [];
+    this.searchOptions = {};
   }
 
   render() {
@@ -49,12 +50,14 @@ export default class App {
   }
 
   fetchEntities(options = {}) {
-    const queryParams = [
-      options.inputValue?.length >= 3 ? `q=${options.inputValue}` : null,
-      options.filter ? `resultType=${options.filter}` : null,
-    ]
-      .filter((a) => a)
-      .join("&");
+    this.searchOptions = { ...this.searchOptions, ...options };
+
+    const { inputValue, filter } = this.searchOptions;
+
+    const queryParams = new URLSearchParams({
+      ...(inputValue?.length >= 3 && { q: inputValue }),
+      ...(filter && { resultType: filter }),
+    });
 
     moviesFetch(`/entities?${queryParams}`)
       .then(responseToJson)
